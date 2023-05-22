@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,p;
+	cout << "Enter Number = " ;
+	cin >> num;
+	cout << "Enter Position = " ;
+	cin >> p;
+	int c=1<<(p-1);
+	
+	if((num&c)!=0)
+		{
+			cout << "Bit set";
+		}
+	else
+		{
+			cout << "Not Bit Set";
+		}
+		return 0;
+		
+}
